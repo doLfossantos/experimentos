@@ -1,20 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    opacity: 0.7;
-  }
-  
-  /* Estilize a logo */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Estilize a logo */
 .logo {
   display: flex;
   align-items: center; /* Alinhe verticalmente a imagem e o texto */
@@ -33,26 +33,26 @@
   margin-top: 10px;
 }
 
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
-    height: 8vh;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-  }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 8vh;
+}
 
-  /* Estilizando o menu início*/
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+/* Estilizando o menu início*/
 .nav-list li a {
   position: relative;
 }
@@ -72,120 +72,151 @@
   width: 100%;
   transition: width 0.3s ease-in;
 }
- /* Estilizando o menu fim*/
- 
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
+/* Estilizando o menu fim*/
 
-  main {
-    background: url("varios\ carros.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    color: #fff;
-  }
-  
-  main h1 {
-    font-size: 40px;
-    color: #FFF;
-    text-align: start;
-    font-weight: 800;
-    position: absolute;
-    left: 80px;
-    top: 300px;
-    padding: 10px;
-    border: 2px solid #ffffff; /* Define a cor inicial do border */
-    transition: color 0.5s;
+.mobile-menu {
+  display: none;
+  cursor: pointer;
 }
 
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+main {
+  background: url("varios\ carros.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+main h1 {
+  font-size: 40px;
+  color: #fff;
+  text-align: start;
+  font-weight: 800;
+  position: absolute;
+  left: 80px;
+  top: 300px;
+  padding: 10px;
+  border: 2px solid #ffffff; /* Define a cor inicial do border */
+  transition: color 0.5s;
+}
+
+/*imagem whatapp*/
+
+div#whatasapp {
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  z-index: 999;
+  padding: 10px;
+  border-radius: 1px;
+  transition: 0.5s;
+}
+
+div#whatasapp:hover {
+  border-radius: 4px 0px 0px 0px;
+  transition: 0.3s;
+}
+/*imagem whatsapp*/
+
+/*imagem instagram*/
+div#instagram {
+  position: fixed;
+  right: 80px;
+  bottom: 50px;
+  z-index: 999;
+}
+div#instagram:hover {
+  border-radius: 4px 0px 0px 0px;
+  transition: 0.5s;
+}
+/*imagem instagram*/
+
 main h1:hover {
-    animation: borderAnimation 0.1s linear forwards; /* A animação ocorre apenas no hover */
-    cursor: pointer;
+  animation: borderAnimation 0.1s linear forwards; /* A animação ocorre apenas no hover */
+  cursor: pointer;
 }
 
 @keyframes borderAnimation {
-    0% {
-        border-width: 2px;
-    }
-    100% {
-        border-width: 4px;
-    }
+  0% {
+    border-width: 2px;
+  }
+  100% {
+    border-width: 4px;
+  }
 }
 
-  footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
-    height: 5vh;
-    color: #fff;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-  }
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 5vh;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+}
