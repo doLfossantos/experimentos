@@ -161,6 +161,15 @@ main {
   transition: color 0.5s;
 }
 
+@media (max-width: 999px) {
+  .main-title {
+    top: 150px; /* Ajuste a distância entre o título e o menu responsivo conforme necessário */
+    transition: top 0.3s ease-in;
+    margin-top: 600px;
+    font-size: 20px;
+  }
+}
+
 div#whatasapp img,
 div#instagram img {
   width: 40px;
